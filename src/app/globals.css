@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #143A22;
-  --color-r-orange: #D56A10;
-  --color-secondary: #F1DFD2;
+  --color-primary: #143a22;
+  --color-r-orange: #d56a10;
+  --color-secondary: #f1dfd2;
   --color-white: #ffffff;
-  --color-layout: #F5F5F5;
+  --color-layout: #f5f5f5;
 }
 
 :root {
@@ -24,4 +24,16 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-section {
+  background-color: rgba(20, 58, 34, 0.4);
+}
+
+.footer {
+  background-image: linear-gradient(
+    180deg,
+    rgba(256, 256, 256, 0.7) 0%,
+    rgba(20, 58, 34, 1) 100%
+  );
 }
