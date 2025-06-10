@@ -4,12 +4,12 @@ import Image from "next/image";
 
 const OurChallenge = () => {
   return (
-    <section className="relative pb-32 ">
+    <section className="relative sm:pb-32 ">
       <h2 className="text-3xl font-semibold text-orange-600 mb-16 pl-16">
         Our Challenge
       </h2>
 
-      <div className="w-[30%] py-6 flex flex-col items-end relative">
+      <div className="w-full sm:w-[30%] py-6 flex flex-col items-end relative">
         <div className="absolute top-0 left-0 w-[50%] h-[70%] bg-[#143A2233]  z-10 opacity-50"></div>
         <div className="w-[90%] sm:h-[80%] z-20">
           <Image
@@ -37,8 +37,8 @@ const OurChallenge = () => {
           "Many people in rural Nyanza lack access to optical clinics, requiring long and costly travel to receive treatment."
         }
         imageSrc={"/images/challenge/challenge2.jpg"}
-        imgclasses="w-[40%]"
-        classes="absolute top-0 left-[60%] sm:left-[28%] z-30 w-[70%]"
+        imgclasses="w-full sm:w-[40%]"
+        classes="flex flex-col sm:flex-row sm:absolute top-0 left-[60%] sm:left-[28%] z-30 w-full sm:w-[70%] sm:h-[40vh] pl-8 sm:px-0 mb-8 sm:mb-0"
       />
       <ChallengeComponent
         title={"Financial Barriers"}
@@ -46,8 +46,8 @@ const OurChallenge = () => {
           "The cost of eyeglasses and checkups is beyond the reach of many, particularly those in poverty."
         }
         imageSrc={"/images/challenge/challenge3.jpg"}
-        imgclasses="w-[60%]"
-        classes="absolute top-[320] left-[60%] sm:left-[35%] z-40 w-[60%] h-[40vh]"
+        imgclasses="w-full sm:w-[40%]"
+        classes="flex flex-col sm:flex-row sm:absolute top-[320] left-[60%] sm:left-[35%] z-40 w-full sm:w-[60%] sm:h-[40vh] px-4 sm:px-0"
       />
     </section>
   );
@@ -67,7 +67,7 @@ const ChallengeComponent = ({
   classes: string;
 }) => {
   return (
-    <div className={`h-[40vh] flex flex-row gap-2 ${classes}`}>
+    <div className={` gap-2 ${classes}`}>
       <Image
         src={imageSrc}
         alt="Our Challenge"

@@ -42,13 +42,13 @@ export default function Navbar() {
           <DropdownMenuTrigger className="text-black">
             <Menu />
           </DropdownMenuTrigger>
-          <DropdownMenuContent className="bg-black text-white w-48">
+          <DropdownMenuContent className="bg-white text-primary w-48">
             <DropdownMenuLabel>My Account</DropdownMenuLabel>
             <DropdownMenuSeparator className="text-white" />
 
             {LinkItem.map((item) => (
               <DropdownMenuItem key={item.href}>
-                <Link href={item.href} className="text-white">
+                <Link href={item.href}>
                   {item.label}
                 </Link>
               </DropdownMenuItem>

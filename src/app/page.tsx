@@ -11,7 +11,7 @@ export default function Home() {
       <div className="flex flex-col w-full min-h-screen bg-white">
         <GetToKnowUsSection />
 
-        <section className="relative flex w-full my-16 py-32">
+        <section className="relative flex w-full my-16 sm:py-32">
           <div className="w-[80%] border-2 border-r-orange ml-16 py-16 px-8 min-h-[90vh]">
             <h2 className="text-3xl font-bold mb-6 text-r-orange">
               Featured Research
@@ -41,7 +41,7 @@ export default function Home() {
                 </a>
               </div>
 
-              <div className="min-w-[70%] h-[300px] ml-8">
+              <div className="hidden sm:block min-w-[70%] h-[300px] ml-8">
                 <Image
                   src="/images/featured-research/research.jpg"
                   alt="Research Image"
@@ -55,7 +55,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="absolute bg-primary right-0 bottom-0 w-[50%] p-8">
+            <div className="hidden sm:block sm:absolute bg-primary right-0 bottom-0 w-[50%] p-8">
             <h6 className="text-white text-xl">Article</h6>
             <h4 className="text-white text-2xl font-semibold mt-8">
               Improving Health for Siaya Residents, One Day at a Time
@@ -72,7 +72,7 @@ export default function Home() {
             >
               Read article here
             </Link>
-          </div>
+            </div>
         </section>
 
         <section className="flex flex-col items-center justify-center w-full py-16">
@@ -124,8 +124,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="relative pb-[400px]">
-          <div className="bg-primary w-full h-[300px] flex flex-row items-center justify-between rounded-bl-[12rem] rounded-br-[12rem] px-16">
+        <section className="flex flex-col sm:relative sm:pb-[400px]">
+          <div className=" bg-primary w-full h-[300px] hidden  sm:flex flex-row items-center justify-between rounded-bl-[12rem] rounded-br-[12rem] px-16">
             <h2 className="text-3xl font-semibold text-white">
               GIVE TODAY AND HELP SOMEONE SEE CLEARLY
             </h2>
@@ -134,7 +134,7 @@ export default function Home() {
             </button>
           </div>
 
-          <div className="absolute left-1/2 top-[250px] transform -translate-x-1/2 z-10 w-[50%]">
+          <div className="flex flex-col items-center justify-center w-full sm:absolute sm:top-0 sm:left-0 sm:right-0 sm:bottom-0">
             <div className="grid grid-cols-2 bg-layout p-8 rounded-lg shadow-lg">
               <div className="col-span-2 flex flex-row items-center gap-4">
                 <h3 className="text-primary">Contact Us</h3>
@@ -153,7 +153,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-2 gap-2 col-span-2 sm:col-span-1">
                 <input
                   type="text"
                   placeholder="Full Name"
@@ -169,7 +169,7 @@ export default function Home() {
                   className="border border-primary rounded-full pt-4 px-3 col-span-2 text-black"
                 />
               </div>
-              <div className="flex flex-col justify-start items-center">
+              <div className="flex flex-col justify-start items-center col-span-2 sm:col-span-1 py-4 sm:py-0">
                 <button className="bg-primary text-white rounded-full min-w-[200px] py-4 px-8 text-lg font-semibold ">
                   Send
                 </button>

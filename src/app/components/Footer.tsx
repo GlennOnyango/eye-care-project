@@ -10,13 +10,13 @@ export default function Footer() {
         className="w-full h-[inherit] object-cover absolute top-0 left-0 z-10"
         priority
       />
-      <div className="w-full min-h-[inherit] px-16 grid grid-cols-1 sm:grid-cols-3 gap-8 items-center footer justify-between p-8 z-20">
-        <h1 className="text-2xl sm:text-3xl font-bold text-start mb-4 flex-grow-1">
+      <div className="w-full min-h-[inherit] px-16 grid grid-cols-3 gap-8 items-center footer justify-between p-8 z-20">
+        <h1 className="text-2xl sm:text-3xl font-bold text-start mb-4 col-span-3 sm:col-span-1 ">
           We are a non profit organization dedicated to improving eye care
           access in rural Nyanza, Kenya
         </h1>
 
-        <div className="flex flex-col gap-y-4 flex-grow-1 bg-primary rounded-2xl p-8">
+        <div className="flex flex-col gap-y-4 flex-grow-1 bg-primary rounded-2xl p-8 col-span-3 sm:col-span-1">
           <h5 className="text-md font-semibold text-secondary mt-4">
             Subscribe to our Newsletter
           </h5>
@@ -37,7 +37,7 @@ export default function Footer() {
           </button>
         </div>
 
-        <div className="grid grid-cols-4  flex-grow-1">
+        <div className="grid grid-cols-4 col-span-3 sm:col-span-1">
           <p className="text-white col-span-4 mb-4">
             Follow us on social media
           </p>
