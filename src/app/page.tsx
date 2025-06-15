@@ -11,8 +11,8 @@ export default function Home() {
       <div className="flex flex-col w-full min-h-screen bg-white">
         <GetToKnowUsSection />
 
-        <section className="relative flex w-full my-16 sm:py-32">
-          <div className="w-[80%] border-2 border-r-orange ml-16 py-16 px-8 min-h-[90vh]">
+        <section className="relative flex w-full my-16 sm:py-32 px-4">
+          <div className="w-full sm:w-[80%] border-2 border-r-orange  sm:ml-16 py-16 px-8 min-h-[90vh]">
             <h2 className="text-3xl font-bold mb-6 text-r-orange">
               Featured Research
             </h2>
@@ -55,7 +55,7 @@ export default function Home() {
             </div>
           </div>
 
-            <div className="hidden sm:block sm:absolute bg-primary right-0 bottom-0 w-[50%] p-8">
+          <div className="hidden sm:block sm:absolute bg-primary right-0 bottom-0 w-[50%] p-8">
             <h6 className="text-white text-xl">Article</h6>
             <h4 className="text-white text-2xl font-semibold mt-8">
               Improving Health for Siaya Residents, One Day at a Time
@@ -72,7 +72,7 @@ export default function Home() {
             >
               Read article here
             </Link>
-            </div>
+          </div>
         </section>
 
         <section className="flex flex-col items-center justify-center w-full py-16">
@@ -129,9 +129,9 @@ export default function Home() {
             <h2 className="text-3xl font-semibold text-white">
               GIVE TODAY AND HELP SOMEONE SEE CLEARLY
             </h2>
-            <button className="bg-secondary text-primary rounded-lg min-w-[200px] py-4 px-8 text-lg font-semibold hover:bg-r-orange hover:text-white transition-colors duration-300">
+            <Link href={"/donate"} className="bg-secondary text-primary rounded-lg min-w-[200px] py-4 px-8 text-lg font-semibold hover:bg-r-orange hover:text-white transition-colors duration-300 flex items-center justify-center z-40">
               Donate
-            </button>
+            </Link>
           </div>
 
           <div className="flex flex-col items-center justify-center w-full sm:absolute sm:top-0 sm:left-0 sm:right-0 sm:bottom-0">

@@ -38,7 +38,7 @@ const OurChallenge = () => {
         }
         imageSrc={"/images/challenge/challenge2.jpg"}
         imgclasses="w-full sm:w-[40%]"
-        classes="flex flex-col sm:flex-row sm:absolute top-0 left-[60%] sm:left-[28%] z-30 w-full sm:w-[70%] sm:h-[40vh] pl-8 sm:px-0 mb-8 sm:mb-0"
+        classes="flex flex-col sm:flex-row sm:absolute sm:top-0 sm:left-[28%] z-30 w-full sm:w-[70%] sm:h-[40vh] pl-8 sm:px-0 mb-8 sm:mb-0"
       />
       <ChallengeComponent
         title={"Financial Barriers"}
@@ -46,8 +46,8 @@ const OurChallenge = () => {
           "The cost of eyeglasses and checkups is beyond the reach of many, particularly those in poverty."
         }
         imageSrc={"/images/challenge/challenge3.jpg"}
-        imgclasses="w-full sm:w-[40%]"
-        classes="flex flex-col sm:flex-row sm:absolute top-[320] left-[60%] sm:left-[35%] z-40 w-full sm:w-[60%] sm:h-[40vh] px-4 sm:px-0"
+        imgclasses="w-full sm:w-[70%]"
+        classes="flex flex-col sm:flex-row sm:absolute top-[320] left-[60%] sm:left-[50%] z-40 w-full sm:w-[50%] sm:h-[40vh] px-4 sm:px-0 gap-4"
       />
     </section>
   );
