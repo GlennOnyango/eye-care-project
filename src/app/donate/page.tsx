@@ -1,9 +1,12 @@
 import Image from "next/image";
 import Footer from "../components/Footer";
+import { DialogCloseButton } from "./components/cash-donations";
+import { Dialog } from "@/components/ui/dialog";
+import { DialogTrigger } from "@radix-ui/react-dialog";
 
 export default function Donate() {
   return (
-    <>
+    <Dialog>
       <div className="w-full p-6 flex flex-col items-start relative bg-white">
         <div className="absolute top-0 left-0 w-[10%] h-[70%] bg-primary  z-10 opacity-100"></div>
         <div className="w-[98%] sm:h-[80%] z-20 grid grid-cols-3 bg-[#F5F5F5] rounded-md shadow-lg">
@@ -27,13 +30,15 @@ export default function Donate() {
             <h5 className="text-2xl font-semibold text-black mb-4">
               Donating options
             </h5>
-            <div>
-              <button className="bg-primary text-white rounded-lg min-w-[200px] py-4 px-8 text-lg font-semibold hover:bg-r-orange hover:text-white transition-colors duration-300">
+            <div className="flex flex-col sm:flex-row gap-4">
+              <button className="bg-primary text-white rounded-lg min-w-[200px] py-4 px-8 text-lg font-semibold">
                 Frame
               </button>
-              <button className="bg-white text-primary border border-primary hover:border-r-orange rounded-lg min-w-[200px] py-4 px-8 text-lg font-semibold hover:bg-r-orange hover:text-white transition-colors duration-300 ml-4">
-                Cash
-              </button>
+              <DialogTrigger asChild>
+                <button className="bg-white text-primary border border-primary hover:border-r-orange rounded-lg min-w-[200px] py-4 px-8 text-lg font-semibold">
+                  Cash
+                </button>
+              </DialogTrigger>
             </div>
           </div>
           <div className="hidden sm:block col-span-1 sm:col-span-2 bg-primary">
@@ -49,7 +54,9 @@ export default function Donate() {
         </div>
       </div>
 
+      <DialogCloseButton />
+
       <Footer />
-    </>
+    </Dialog>
   );
 }
