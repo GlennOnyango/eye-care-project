@@ -1,7 +1,6 @@
 import Image from "next/image";
 import GetToKnowUsSection from "./components/homepage/get-to-know-us";
 import HeroSection from "./components/homepage/hero-section";
-import Footer from "./components/Footer";
 import Link from "next/link";
 
 export default function Home() {
@@ -178,7 +177,6 @@ export default function Home() {
           </div>
         </section>
 
-        <Footer />
       </div>
     </>
   );

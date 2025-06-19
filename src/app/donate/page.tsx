@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Footer from "../components/Footer";
 import { DialogCloseButton } from "./components/cash-donations";
 import { Dialog } from "@/components/ui/dialog";
 import { DialogTrigger } from "@radix-ui/react-dialog";
@@ -55,8 +54,6 @@ export default function Donate() {
       </div>
 
       <DialogCloseButton />
-
-      <Footer />
     </Dialog>
   );
 }

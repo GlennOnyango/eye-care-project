@@ -13,6 +13,7 @@ import "./globals.css";
 // });
 
 import Navbar from "@/app/components/Navbar";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "Project I",
@@ -26,11 +27,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` antialiased`}>
+      <body className={`flex flex-col antialiased min-h-screen bg-white`}>
         <Navbar />
-        <main className="min-h-screen flex flex-col ">
-          {children}
-        </main>
+        <main className="grow flex flex-col bg-white">{children}</main>
+        <Footer />
       </body>
     </html>
   );
