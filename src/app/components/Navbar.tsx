@@ -9,7 +9,6 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
@@ -43,7 +42,6 @@ export default function Navbar() {
             <Menu />
           </DropdownMenuTrigger>
           <DropdownMenuContent className="bg-white text-primary w-48">
-            <DropdownMenuLabel>My Account</DropdownMenuLabel>
             <DropdownMenuSeparator className="text-white" />
 
             {LinkItem.map((item) => (

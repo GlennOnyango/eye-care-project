@@ -87,12 +87,14 @@ export default function CheckoutPage({ amount }: { amount: number }) {
       {errorMessage && (
         <div className="text-red-500 text-sm">{errorMessage}</div>
       )}
-      <button
-        disabled={!stripe || isLoading}
-        className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-200 disabled:animate-pulse disabled:opacity-50"
-      >
-        {isLoading ? "Processing..." : `Pay ` + (amount / 100).toFixed(2)}
-      </button>
+      <div className="flex items-center justify-center mt-4">
+        <button
+          disabled={!stripe || isLoading}
+          className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-200 disabled:animate-pulse disabled:opacity-50"
+        >
+          {isLoading ? "Processing..." : `Pay ` + (amount / 100).toFixed(2)}
+        </button>
+      </div>
     </form>
   );
 }

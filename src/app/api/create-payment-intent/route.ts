@@ -19,7 +19,8 @@ export async function POST(request: NextRequest) {
     const paymentIntent = await stripe.paymentIntents.create({
       amount: amount, // Stripe expects amount in cents
       currency: "usd", // Change to your currency
-      metadata: { purpose: "Donation" },
+      metadata: { purpose: "Donation",  },
+      
     });
 
     return NextResponse.json({

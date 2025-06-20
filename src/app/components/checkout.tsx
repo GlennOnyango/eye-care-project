@@ -13,13 +13,13 @@ if (!stripePublishableKey) {
 }
 const stripePromise = loadStripe(stripePublishableKey);
 
-export default function Checkout({ duration, amount }: Donations) {
+export default function Checkout({ amount }: Donations) {
   return (
     <div id="checkout">
       <Elements
         stripe={stripePromise}
         options={{
-          mode: duration,
+          mode: "payment",
           amount: Math.round(amount * 100), // Convert to cents
           currency: "usd", // Change to your currency
         }}
