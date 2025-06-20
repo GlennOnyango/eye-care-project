@@ -35,7 +35,7 @@ const LinkItem = [
 
 export default function Navbar() {
   return (
-    <nav className="w-full flex items-center justify-between py-4 px-8 bg-layout shadow-sm">
+    <nav className="w-full flex items-center justify-between py-4 px-32 bg-layout shadow-sm">
       <div className="md:hidden flex items-center gap-4">
         <DropdownMenu>
           <DropdownMenuTrigger className="text-black">

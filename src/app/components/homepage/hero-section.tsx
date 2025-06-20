@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <div className="flex flex-col items-center justify-center hero-section relative min-h-[50vh]">
+    <div className="flex flex-col items-center justify-center relative min-h-[60vh] px-32 hero-section ">
       <Image
         src="/images/hero-section/Hero.png"
         alt="Hero Image"
@@ -11,7 +11,7 @@ export default function HeroSection() {
         className="w-full h-[300px] sm:h-[inherit] object-cover absolute top-0 left-0"
         priority
       />
-      <div className="w-[80%] min-h-[inherit] flex flex-col gap-y-12 items-start justify-center p-8 ">
+      <div className="w-full min-h-[inherit] flex flex-col gap-y-12 items-start justify-center py-8 z-10 ">
         <h1 className="text-2xl sm:text-3xl font-bold text-start mb-4">
           Empowering Lives Through Clear <br /> Vision – Eyeglasses & Eye Care
           for Underprivileged Communities
